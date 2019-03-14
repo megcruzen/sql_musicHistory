@@ -22,12 +22,14 @@ VALUES ('The Talking Heads', 1975);
 ```
 
 3. Using the `INSERT` statement, add one, or more, albums by your artist to the `Album` table.
+
 ```sql
 INSERT INTO Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId)
 VALUES ('Fear of Music', '08/03/1979', 41, 'Sire', 29, 2)
 ```
 
 4. Using the `INSERT` statement, add some songs that are on that album to the `Song` table.
+
 ```sql
 INSERT INTO Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId)
 VALUES ('Life During Wartime', 221, '08/03/1979', 2, 29, 23)
@@ -35,7 +37,8 @@ INSERT INTO Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId)
 VALUES ('Heaven', 241, '08/03/1979', 2, 29, 23)
 ```
 
-5. Write a `SELECT` query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the LEFT JOIN keyword sequence to connect the tables, and the WHERE keyword to filter the results to the album and artist you added.
+5. Write a `SELECT` query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the `LEFT JOIN` keyword sequence to connect the tables, and the `WHERE` keyword to filter the results to the album and artist you added.
+
 ```sql
 SELECT s.Title, a.Title, ar.ArtistName
 FROM Song s 
