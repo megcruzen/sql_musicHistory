@@ -6,9 +6,9 @@ https://github.com/nashville-software-school/bangazon-inc/blob/master/book-1-ori
 1. Using the Object Explorer in SSMS, examine the tables, columns, and foreign keys of the database.
 2. Using the dbdiagram.io site, create an ERD for the database.
 
-For each of the following exercises, provide the appropriate query. 
-
 <img src='musicHistory_ERD.png' width=700>
+
+For each of the following exercises, provide the appropriate query. 
 
 1. Query all of the entries in the `Genre` table
 ```sql
